@@ -6,11 +6,11 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-const eqArrays = (arr1, arr2) => {
-  let arrayLengthCheck = arr1.length === arr2.length;
+const eqArrays = (array1, array2) => {
+  let arrayLengthCheck = array1.length === array2.length;
   if (arrayLengthCheck){
-    for (let i = 0; i < arr1.length; i++){
-      if (arr1 [i] !== arr2 [i]){
+    for (let i = 0; i < array1.length; i++){
+      if (array1 [i] !== array2 [i]){
         return false;
       }
     }

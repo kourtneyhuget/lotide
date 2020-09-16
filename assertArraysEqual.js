@@ -1,4 +1,4 @@
-const assertArraysEqual = function(arr1,arr2) {
-  eqArrays(arr1,arr2) ? console.log(`✅ ✅ ✅ : WOOHOO! These arrays ARE equal`) :
-  console.log(`❌ ❌ ❌: OH NO! These arrays are NOT equal`);
-}
+const assertArraysEqual = function(array1, array2) {
+  eqArrays(array1, array2) ? console.log(`✅✅✅ Assertion Passed:  ${array1} === ${array2}`) :
+    console.log(`🛑🛑🛑 Assertion Failed: ${array1} !== ${array2}`);
+  }
