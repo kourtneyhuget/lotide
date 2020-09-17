@@ -23,6 +23,8 @@ const eqArrays = (array1, array2) => {
 // output false if they don't match
  // eqObject Solution:
 
+ // Saad helped me with this problem 
+ 
 const eqObjects = function(object1, object2) {
   let keyArrObject1 = Object.keys(object1); // [c, d]
   let keyArrObject2 = Object.keys(object2); // [d ,c]
