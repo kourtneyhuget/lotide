@@ -26,6 +26,9 @@ This project was created and published by me as part of my learnings at Lighthou
 
 The following functions are currently implemented:
 
-- `function1(...)`: description
-- `function2(...)`: description
-- `function3(...)`: description
+- `function1(AssertEqualTest)`: comparing two strings
+- `function2(eqArrays)`: comparing arrays
+- `function3(head)`: returns the first element in the array
+- `function4(middle)`: returns the middle elements of an array (1 if off, 2 if even)
+- `function5(tail)`: returns the last element in an array
+- `function6(head)`: removes the first head of an array
