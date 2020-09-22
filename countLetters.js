@@ -1,22 +1,24 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`❤️ ❤️ ❤️ Assertion Passed: ${actual}  === ${expected}`);
-  } else {
-    console.log(`😭😭😭Assertion Failed: ${actual} !=== ${expected}`);
-  }
-};
+const assertEqual = require("./assetEqual");
+// const assertEqual = function(actual, expected) {
+//   if (actual === expected) {
+//     console.log(`❤️ ❤️ ❤️ Assertion Passed: ${actual}  === ${expected}`);
+//   } else {
+//     console.log(`😭😭😭Assertion Failed: ${actual} !=== ${expected}`);
+//   }
+// };
 
-const countLetters = function(string) {
+const countLetters = function (string) {
   let results = {};
   for (letter of string) {
-   if (letter != " ") {
-    if (results[letter]) {
-      results[letter] += 1
-    } else { results[letter] = 1
+    if (letter != " ") {
+      if (results[letter]) {
+        results[letter] += 1;
+      } else {
+        results[letter] = 1;
+      }
     }
-   } 
-  } 
+  }
   return results;
-}
+};
 
-console.log(countLetters("Lighthouse in the house"));
+module.exports = countLetters;

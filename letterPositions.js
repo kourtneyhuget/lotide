@@ -1,8 +1,9 @@
-const assertArraysEqual = function (array1, array2) {
-  eqArrays(array1, array2)
-    ? console.log(`❤️ ❤️ ❤️ Assertion Passed:  ${array1} === ${array2}`)
-    : console.log(`😭😭😭 Assertion Failed: ${array1} !== ${array2}`);
-};
+const assertArraysEqual = require("./assertArraysEqual");
+// const assertArraysEqual = function (array1, array2) {
+//   eqArrays(array1, array2)
+//     ? console.log(`❤️ ❤️ ❤️ Assertion Passed:  ${array1} === ${array2}`)
+//     : console.log(`😭😭😭 Assertion Failed: ${array1} !== ${array2}`);
+// };
 
 const letterPositions = function (sentence) {
   const results = {};
@@ -24,4 +25,6 @@ const findIndex = function (string, letter) {
   return indexResult;
 };
 
-console.log(letterPositions("lighthouse in the house"));
+module.exports = letterPositions;
+
+// console.log(letterPositions("lighthouse in the house"));
